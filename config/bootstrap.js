@@ -30,6 +30,18 @@ Post.create({post:'holaperrosdelmal6',user:'10370711'}).exec(console.log);
 Post.create({post:'holaperrosdelmal7',user:'10370712'}).exec(console.log);
 Post.create({post:'holaperrosdelmal8',user:'10370712'}).exec(console.log);
 
+
+
+RubricaPost.create({excelente:1,idpost:1}).exec(console.log);
+RubricaPost.create({bueno:1,idpost:2}).exec(console.log);
+RubricaPost.create({bueno:1,idpost:3}).exec(console.log);
+RubricaPost.create({malo:1,idpost:4}).exec(console.log);
+RubricaPost.create({malo:1,idpost:5}).exec(console.log);
+RubricaPost.create({malo:1,idpost:6}).exec(console.log);
+RubricaPost.create({excelente:1,idpost:7}).exec(console.log);
+RubricaPost.create({excelente:1,idpost:8}).exec(console.log);
+
+
   // It's very important to trigger this callback method when you are finished
   // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
   cb();
