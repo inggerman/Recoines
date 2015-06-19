@@ -1,3 +1,3 @@
 # RECOINES
 
-a [Sails](http://sailsjs.org) application
+Una aplicacion web creada en sailsjs para crear una red
