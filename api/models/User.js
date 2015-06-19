@@ -36,9 +36,9 @@ autoPK: false,
   }
 };
 
-var bcrypt=require('bcrypt');
+var bcrypt=require('bcrypt');// un modulo de node para encriptar las contraseñas en un hash
 
-
+//funcion que encripta la contraseña de la tabla User
 function hashPass(values,next){
 	bcrypt.hash(values.password,10,function(err,hash){
 		if(err) return next(err);
