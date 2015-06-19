@@ -20,20 +20,46 @@ autoPK: false,
   		required:true,
   		columnName: 'encrypted_password'
   	},
+    nombre:{
+      type:'string',
+      required:true,
+    },
+    apellido_p:{
+      type:'string',
+      required:true
+    },
+    apellido_m:{
+      type:'string',
+      required:true
+    },
+    correo_inst:{
+      type:'email',
+      required:true,
+      unique:true
+    },
+
   	correo_pers:{
   		type:'email',
   		required:false,
   		unique:true
   	},
-
+    posts:{
+      collection:'Post',
+      via:'user'
+    },
   	pd:{
   		model:'Personaldata'
   	}
+    
 	
   },
   beforeCreate:function(values,next){
   	hashPass(values,next);
-  }
+  },
+  beforeUpdate: function(values, next) {
+		if(values.password) hashPassword(values, next);
+		else next();
+	}
 };
 
 var bcrypt=require('bcrypt');// un modulo de node para encriptar las contraseñas en un hash
