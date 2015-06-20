@@ -9,6 +9,14 @@ module.exports = {
 
   attributes: {
 
+  	comentario:{
+  		type:'text',
+  		required:true
+  	},
+  	idpost:{
+  		model:'Post'
+  	}
+
   }
 };
 

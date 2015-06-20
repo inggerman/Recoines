@@ -1,0 +1,11 @@
+<div class="container">
+	<h2>Informacion Usuario</h2>
+	<ul>
+		<li><%= user.nombre %></li>
+		<li><%= user.apellido_p %></li>
+	</ul>
+
+	<form action="/user/edit/<%= user.ncontrol%>" method="post">
+		<button type="submit" class="btn btn-success">Editar</button>
+	</form>
+</div>

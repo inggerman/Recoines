@@ -12,29 +12,27 @@ autoPK: false,
   	ncontrol:{
   		type: 'string',
   		primaryKey:true,
-  		required:true,
+  		
   		unique:true
   	},
   	password:{
   		type:'string',
-  		required:true,
+  		
   		columnName: 'encrypted_password'
   	},
     nombre:{
-      type:'string',
-      required:true,
+      type:'string'
+      
     },
     apellido_p:{
-      type:'string',
-      required:true
+      type:'string'
     },
     apellido_m:{
-      type:'string',
-      required:true
+      type:'string'
     },
     correo_inst:{
       type:'email',
-      required:true,
+      
       unique:true
     },
 
